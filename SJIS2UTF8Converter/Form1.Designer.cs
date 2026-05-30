@@ -15,6 +15,7 @@ partial class Form1
     private RadioButton rdoBomWith = null!;
     private Button btnStart = null!;
     private Button btnClear = null!;
+    private Label lblVersion = null!;
     private TextBox txtLog = null!;
 
     /// <summary>
@@ -164,6 +165,15 @@ partial class Form1
         btnClear.UseVisualStyleBackColor = true;
         btnClear.Click += btnClear_Click;
         // 
+        // lblVersion
+        // 
+        lblVersion = new Label();
+        lblVersion.AutoSize = true;
+        lblVersion.Location = new Point(680, 15);
+        lblVersion.Name = "lblVersion";
+        lblVersion.Size = new Size(120, 20);
+        lblVersion.Text = "Ver.1.0";
+        // 
         // txtLog
         // 
         txtLog.Location = new Point(12, 290);
@@ -188,13 +198,14 @@ partial class Form1
         Controls.Add(grpBom);
         Controls.Add(btnStart);
         Controls.Add(btnClear);
+        Controls.Add(lblVersion);
         Controls.Add(txtLog);
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
         MinimizeBox = true;
         Name = "Form1";
         StartPosition = FormStartPosition.CenterScreen;
-        Text = "SJIS → UTF-8 文字コード一括変換";
+        Text = "SJIS → UTF-8 文字コード一括変換 Ver.1.0";
         grpBom.ResumeLayout(false);
         grpBom.PerformLayout();
         ResumeLayout(false);
