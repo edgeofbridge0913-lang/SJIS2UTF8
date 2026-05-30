@@ -49,6 +49,7 @@ bld/
 
 # Build results on 'Bin' directories
 **/[Bb]in/*
+!SJIS2UTF8Converter/bin/Release/net10.0-windows/win-x64/publish/
 # Uncomment if you have tasks that rely on *.refresh files to move binaries
 # (https://github.com/github/gitignore/pull/3736)
 #!**/[Bb]in/*.refresh
